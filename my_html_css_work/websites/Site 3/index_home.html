@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style_home.css">
+    <!-- <script src="script_home.js"></script> -->
+    <title>Bank Site</title>
+</head>
+
+<body>
+    <div id="container">
+        <header>
+            <center>
+                <div class="logo">
+                    <img id="logo-img" src="Logo1.JPG" alt="logo">
+                    <h2 id="title">FSD Bank Application</h2>
+                </div>
+            </center>
+            <div class="dateholder">
+                <p>Date/Time: <span id="datetime"></span></p>
+            </div>
+            <div id="head_info">
+                <p id="top_usernm">Welcome User: <span id="logged-in-user">UserName</span></p>
+                <p id="status"><a href="index_sign-in.html" target="_self">Log Out</a></p>
+            </div>
+
+        </header>
+        <nav>
+            <a href="index_home.html" target="_self">Home</a>
+            <a href="index_banking.html" target="_self">Personal Banking</a>
+            <a href="index_passbook.html" target="_self">Passbook</a>
+            <a href="#about" target="_blank">About Us</a>
+            <div class="dropdown">
+                <a class="contact_btn">Contact Us</a>
+                <ul class="contact_list">
+                    <li><a class="cli" href="" target="_blank">Saranya</a></li>
+                    <li><a class="cli" href="" target="_blank">Samad</a></li>
+                    <li><a class="cli" href="" target="_blank">Amitava</a></li>
+                    <li><a class="cli" href="" target="_blank">Ranjit</a></li>
+                    <li><a class="cli" href="" target="_blank">Shubhendu</a></li>
+                </ul>
+            </div>
+
+        </nav>
+
+        <section>
+            <div class="notify">
+                <img id="img-notice" src="notifications.png" alt="">
+                <p id="notifications">
+                    <marquee onmouseover="this.stop();" onmouseout="this.start();" direction="up" loop="true"
+                        scrollamount="2" height="190px">
+                        <ul class="notice-list">
+                            <li><a href="">Now Available! Platinum Credit cards</a></li>
+                            <br>
+                            <li><a href="">Get Home Loans @ 11.5%</a></li>
+                            <br>
+                            <li><a href="">Link your Adhaar to Account</a></li>
+                            <br>
+                            <li><a href="">LPG Subsidy</a></li>
+                            <br>
+                            <li><a href="">Green Channel Registration Form</a></li>
+                        </ul>
+                    </marquee>
+                </p>
+            </div>
+        </section>
+
+        <article>
+
+        </article>
+
+        <aside>
+
+        </aside>
+
+        <footer>
+
+        </footer>
+    </div>
+</body>
+
+<script>
+    var dt = new Date();
+    document.getElementById("datetime").innerHTML = ("[ "+("0" + dt.getDate()).slice(-2)) + "." + (("0" + (dt.getMonth() +
+        1)).slice(-2)) + "." + (dt.getFullYear()) + " / " + (("0" + dt.getHours()).slice(-2)) + ":" + (("0" + dt
+        .getMinutes()).slice(-2)+" ]");
+</script>
+
+</html>

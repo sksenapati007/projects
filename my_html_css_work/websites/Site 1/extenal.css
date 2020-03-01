@@ -1,0 +1,111 @@
+table,td{
+      border-style: solid;
+      font-size: 100%;
+      text-align:center; 
+      border-collapse: collapse;
+      border-color: lightyellow;
+/*      background-color: lightcoral;*/
+} 
+tr:nth-child(even){
+    background-color: deeppink;
+}
+tr:nth-child(odd){
+    background-color: lightpink;
+}
+iframe{
+    background-color: brown;
+}
+
+th{
+      border-style: solid;
+      font-size: 120%;
+      text-align:center; 
+      border-collapse: collapse;
+      border-color: lightyellow;
+      background-color: black;
+      color: greenyellow;
+}
+#capt{
+    font-size: 150%;
+    color: yellow;
+}
+a:link{
+    color: black;
+}
+a:visited{
+    color:yellow;
+}
+a:hover{
+    color:greenyellow;
+}
+body{
+            background-color: lightseagreen;
+/*            background-image:         url(games38.jpg);*/
+/*            background-repeat: no-repeat;*/
+}
+p{
+    text-indent: 80px;
+    word-spacing: 5px;
+    font-size: 2em;
+    direction: rtl;
+    font-family: monospace;
+    font-style: italic;
+    font-weight: bold;   
+    border-style: dashed;
+    margin: 20px 50px;
+    padding: 20px 50px 10px;
+    text-align: justify;
+}
+#one{
+/*      list-style-type:lower-roman;*/
+        border: 2px solid;
+        margin: 25px 30px;
+        padding: 25px 120px;
+}
+#two{
+/*      list-style-type:square;*/
+        list-style-type: lower-alpha;
+        padding: 5px;
+}
+ul{
+/*      list-style-type:square;*/
+        background-color: blue;
+}
+        
+li{
+        background-color: red;
+}
+/*
+        video{
+            height: 400px;
+            width: 600px;
+            float: right
+        }
+*/
+/*
+        div{
+            font-size: 125%;
+            color: aquamarine;
+            text-align: justify;
+            font-family: monospace;
+            column-count: 4;
+            column-rule: 5px dotted red;
+            column-gap: 10px;
+        }
+*/
+/*
+        .two{
+            font-size: 200%;
+            color: orangered;
+            background-color: black;
+            text-align: center;
+            font-family: monospace;
+        }
+        .one{
+            font-size: 200%;
+            color: yellow;
+            background-color: black;
+            text-align: center;
+            font-family: monospace;
+        }
+*/

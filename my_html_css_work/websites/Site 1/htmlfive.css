@@ -1,0 +1,72 @@
+body{ 
+    border: solid;
+    border-color: brown;
+    border-width: 3px;
+    height: 750px;
+    width: 1510px;
+    background-color: lightseagreen;
+    color: darkred; 
+}
+h3{
+    padding-left: 20px;
+}
+header{
+    height: 60px;
+    width: 1510px;
+    background-color: honeydew;
+    padding-top: 1px;
+}
+
+nav{
+    height: 60px;
+    width: 1510px;
+    background-color: burlywood;
+/*    background-color: lightsalmon;*/
+}
+
+button{
+    height: 60px;
+    width: 180px;
+    background-image: radial-gradient(lightyellow,lightyellow 20px,orange);
+    background-color: burlywood;
+    background-color: lightsalmon;
+}
+marquee{
+    color: yellow;
+}
+
+section{
+    height: 275px;
+    width: 755px;
+}
+
+article{
+    height: 275px;
+    width: 755px;
+}
+
+aside{
+    float: right;
+    margin-top: -550px;
+    height: 550px;
+    width: 755px;
+}
+
+div{
+    height: 450px;
+    width: 650px;
+    margin: 20px;
+    padding: 10px;
+    border-color: darkseagreen;
+    border-style: solid;   
+}
+
+#one{
+    height: 120px;
+    width: 120px;
+}
+
+footer{
+    height: 60px;
+    width: 1510px;
+}

@@ -1,0 +1,72 @@
+.parent{
+   padding:10px;
+/*    background-color: lightgoldenrodyellow;*/
+    background-image: repeating-linear-gradient(lightgoldenrodyellow,lightpink);
+    height: auto ;
+    width: auto;
+    animation: ourFrame1;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    float: left;
+    clear: none;
+    column-count: 2;
+} 
+@keyframes ourFrame1{
+            from{
+                background-image: repeating-linear-gradient(lightcoral,hotpink);
+            }
+            to{
+                background-image: repeating-linear-gradient(green,yellow);
+            }
+}
+
+body{
+    background-color: black;
+}
+
+legend{
+    font-size: 250%;
+    color:darkmagenta;
+}
+
+label{
+    font-size: 128%;
+    color: blue;
+}
+
+#btn{
+    background-color:darkmagenta;
+    color: chartreuse;
+    background-image: linear-gradient(deeppink,darkmagenta,lightpink);
+    font-size: 90%;
+    font-family: cursive;
+    height: 48px;
+    width: 96px;
+    border-radius: 12px;
+}
+#one{
+    padding:10px;
+    background-image: repeating-linear-gradient(45deg,lightgoldenrodyellow 5%,lightpink,lightgoldenrodyellow);
+    height: 600px ;
+    width: 550px ;
+    
+}
+#two{
+    padding:10px;
+    background-image: repeating-linear-gradient(45deg,lightgoldenrodyellow 5%,lightpink,lightgoldenrodyellow);
+    height: 600px ;
+    width: 550px ;
+}
+ 
+
+fieldset{
+            font-size: 125%;
+            color: deeppink;
+            text-align: justify;
+            font-family: monospace;
+            border: 5px;
+            border-style: dashed;
+            border-color: lightcoral;
+            height: 550px ;
+            width: 500px ;
+}

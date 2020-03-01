@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,600" rel="stylesheet" type="text/css">
+    <link type="text/css" rel="stylesheet" href="style_passbook.css">
+
+    <title>PassBook</title>
+</head>
+
+<body>
+    <header>
+        <center>
+            <div class="logo">
+                <img id="logo-img" src="Logo1.JPG" alt="logo">
+                <h2 id="title">FSD Bank Application</h2>
+            </div>
+        </center>
+        <div class="dateholder">
+            <p>Date/Time: <span id="datetime"></span></p>
+        </div>
+        <div id="head_info">
+            <p id="top_usernm">Welcome User: UserName</p>
+            <p id="status"><a href="index_sign-in.html" target="_self">Log Out</a></p>
+        </div>
+
+    </header>
+    <nav>
+        <a href="index_home.html" target="_self">Home</a>
+        <a href="index_banking.html" target="_self">Personal Banking</a>
+        <a href="index_passbook.html" target="_self">Passbook</a>
+        <a href="#about" target="_blank">About Us</a>
+        <div class="dropdown">
+            <a class="contact_btn">Contact Us</a>
+            <ul class="contact_list">
+                <li><a class="cli" href="" target="_blank">Saranya</a></li>
+                <li><a class="cli" href="" target="_blank">Samad</a></li>
+                <li><a class="cli" href="" target="_blank">Amitava</a></li>
+                <li><a class="cli" href="" target="_blank">Ranjit</a></li>
+                <li><a class="cli" href="" target="_blank">Shubhendu</a></li>
+            </ul>
+        </div>
+
+    </nav>
+
+
+    <div class="with-depo-input">
+       Account Info
+    </div>
+    <div class="transaction-view">
+        <div class="withdraw-panel active">
+            <div class="withdraw" id="wit">
+                <u>Withdraw</u>
+            </div>
+        </div>
+
+        <div class="deposit-panel">
+            <div class="deposit" id="dep">
+                <u>Deposit</u>
+            </div>
+        </div>
+    </div>
+    <script src="script_passbook.js"></script>
+</body>
+<script>
+    var dt = new Date();
+    document.getElementById("datetime").innerHTML = ("[ "+("0" + dt.getDate()).slice(-2)) + "." + (("0" + (dt.getMonth() +
+        1)).slice(-2)) + "." + (dt.getFullYear()) + " / " + (("0" + dt.getHours()).slice(-2)) + ":" + (("0" + dt
+        .getMinutes()).slice(-2)+" ]");
+</script>
+
+</html>

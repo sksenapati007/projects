@@ -1,0 +1,185 @@
+body{
+    height: 760px;
+    width: 1510px;
+    font-family: monospace;
+    border: solid;
+    border-width: 3px;
+    border-color: fuchsia;
+    background-color: floralwhite;
+}
+
+h3{
+    margin-top: -20px;
+}
+
+header{
+    height:60px;
+    width: 1510px;
+    color: deeppink;
+}
+
+
+nav{
+    height:60px;
+    width: 1510px;
+}
+
+marquee{
+    font-size: 15px;
+    color: red;
+}
+
+button{
+    height: 60px;
+    width: 190px;
+    background-image: radial-gradient(lightyellow,lightpink 55%,deeppink);
+    float: left;
+    font-family: cursive;
+    font-size: 20px;
+    color: darkviolet
+}
+
+section{
+    height:280px;
+    width: 755px;
+}
+
+#offer{
+    padding: 10px;
+    height:250px;
+    width: 450px;
+}
+
+article{
+    height:280px;
+    width: 755px;
+    padding-left: 30px;
+    color: purple;
+    font-size: 15px;
+}
+
+.list{
+    height: 280px;
+    width: 755px;
+    float: right;
+    column-count: 2;
+}
+
+
+aside{
+    height:560px;
+    width: 755px;
+    float: right;
+    margin-top: -560px;
+}
+
+#ul1{
+    height: 290px;
+    list-style: square;
+}
+
+#ul2{
+    height: 290px;
+    list-style: square;
+    margin-top: -30px;
+}
+
+#img1{
+    padding: 30px;
+    height: 100px;
+    width: 120px;
+}
+
+#flowertiles{
+    height: 550px;
+    width: 750px;
+}
+
+footer{
+    height:43.4px;
+    width: 1510px;
+}
+
+
+/* Animation CSS */
+
+#flowersvg{
+    /* text-align: center; */
+    padding: 3%;
+    float: right;
+}
+
+#leftp1 {
+    animation: lPetals1 2s alternate infinite;
+    transform-origin: center;
+    transform-box: 20%;
+}
+
+@keyframes lPetals1 {
+    from{
+        transform: rotateZ(-10deg);
+    }
+    to{
+        transform: rotateZ(0deg);
+    }
+}
+
+#leftp2 {
+    animation: lPetals2 2s alternate infinite;
+    transform-origin: center;
+    transform-box: 20%;
+}
+
+@keyframes lPetals2 {
+    from{
+        transform: rotateZ(-10deg);
+    }
+    to{
+        transform: rotateZ(0deg);
+    }
+}
+
+#rightp1 {
+    animation: rPetals1 2s alternate infinite;
+    transform-origin: center;
+    transform-box: 20%;
+}
+
+@keyframes rPetals1 {
+    from{
+        transform: rotateZ(10deg);
+    }
+    to{
+        transform: rotateZ(0deg);
+    }
+}
+
+#rightp2 {
+    animation: rPetals2 2s alternate infinite;
+    transform-origin: center;
+    transform-box: 20%;
+}
+
+@keyframes rPetals2 {
+    from{
+        transform: rotateZ(10deg);
+    }
+    to{
+        transform: rotateZ(0deg);
+    }
+}
+
+#halo {
+    animation: haloo 2s alternate infinite;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+@keyframes haloo {
+    from{
+        transform: rotateY(0deg);
+    }
+    to{
+        transform: rotateY(360deg);
+    }
+}

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="style_sign-in.css">
+	<!-- <script src="script_sign-in.js"></script> -->
+	<title>LogIn</title>
+</head>
+
+<body>
+	<header class="head-box">
+		<div class="logo">
+			<img id="logo-img" src="Logo1.JPG" alt="logo">
+		</div>
+		<div class="bankname">
+			<h1>FSD BANK- people's bank</h1>
+		</div>
+	</header>
+
+	<article class="box1">
+		<div class="notify">
+			<img id="img-notice" src="notifications.png" alt="">
+			<p id="notifications">
+				<marquee onmouseover="this.stop();" onmouseout="this.start();" direction="up" loop="true"
+					scrollamount="2" height="385px">
+					<ul class="notice-list">
+						<li><a href="">Now Available! Platinum Credit cards</a></li>
+						<br>
+						<li><a href="">Get Home Loans @ 11.5%</a></li>
+						<br>
+						<li><a href="">Link your Adhaar to Account</a></li>
+						<br>
+						<li><a href="">LPG Subsidy</a></li>
+						<br>
+						<li><a href="">Green Channel Registration Form</a></li>
+					</ul>
+				</marquee>
+			</p>
+		</div>
+	</article>
+	<section class="box2">
+		<div class="welcome-msg">
+			<h2 class="wlcm-msg-h2">Welcome</h2>
+			<h2 class="wlcm-msg-h2">To</h2>
+			<h2 class="wlcm-msg-h2">FSD Bank</h2>
+		</div>
+		<!-- Buttons for popup login and register -->
+		<div class="login-register">
+			<br><br>
+			<input class="lgn-reg-btn" type="submit" value="Log In"
+				onclick="document.getElementById('id01').style.display='block'">
+			<br>
+			<br>
+			<h4 style="margin: 0px; color: red;">OR</h4>
+			<br>
+			<input class="lgn-reg-btn" type="submit" value="Register"
+				onclick="document.getElementById('id02').style.display='block'">
+		</div>
+
+		<!-- div for login modal -->
+		<div id="id01" class="modal-login">
+			<!-- Close Button -->
+			<span onclick="document.getElementById('id01').style.display='none'" class="close1"
+				title="Close Modal">&times;</span>
+			<!-- Form Content -->
+			<form onsubmit="return login_validate() " class="login-content animate1" action="index_home.html">
+				<h2 class="login-heading">Login</h2>
+				<div class="imgcontainer">
+					<img src="penguin.svg" alt="Avatar" class="avatar">
+				</div>
+				<br><br>
+				<div class="usn-section">
+					<input id="usn" type="text" name="UserName" autocomplete="off" required />
+					<label for="UserName" class="label-usrnm">
+						<span class="content-usn">Username</span>
+					</label>
+				</div>
+				<br><br>
+				<div class="pwd-section">
+					<input id="pwd" type="password" name="Password" autocomplete="off" required>
+					<label for="Password" class="label-passwd">
+						<span class="content-pwd">Password</span>
+					</label>
+				</div>
+				<br> <br>
+				<span id="msg"></span>
+				<br><br>
+				<input id="lgn-btn" type="submit" value="Log in">
+			</form>
+		</div>
+
+		<!-- div for login modal -->
+		<div id="id02" class="modal-register">
+			<!-- Close Button -->
+			<span onclick="document.getElementById('id02').style.display='none'" class="close2"
+				title="Close Modal">&times;</span>
+
+			<!-- Form Content -->
+			<form onsubmit="return register_validate()" class="register-content animate2" action="index_home.html">
+				<h2 class="register-heading">Create Account</h2>
+				<div class="imgcontainer">
+					<img src="penguin.svg" alt="Avatar" class="avatar">
+				</div>
+				<div class="name-section">
+					<input id="_name" type="text" name="name" autocomplete="off" required />
+					<label for="name" class="label-name">
+						<span class="content-n">Name</span>
+					</label>
+				</div>
+				<!-- <br>
+				<div class="email-section">
+					<input id="_email" type="text" name="email" autocomplete="off" required />
+					<label for="email" class="label-email">
+						<span class="content-email">Email</span>
+					</label>
+				</div> -->
+				<br>
+				<div class="phone-section">
+					<input id="_mobile" type="text" name="phone" autocomplete="off" required />
+					<label for="phone" class="label-phone">
+						<span class="content-phone">Mobile Number</span>
+					</label>
+				</div>
+				<br>
+				<div class="city-section">
+					<input id="_city" type="text" name="city" autocomplete="off" required />
+					<label for="city" class="label-city">
+						<span class="content-city">City</span>
+					</label>
+				</div>
+				<br>
+				<div class="pwd-section2">
+					<input id="_pwd" type="password" name="Password2" autocomplete="off" required>
+					<label for="Password2" class="label-passwd2">
+						<span class="content-pwd2">Password</span>
+					</label>
+				</div>
+				<br>
+				<div class="cpwd-section2">
+					<input id="_cpwd" type="password" name="cPassword2" autocomplete="off" required>
+					<label for="cPassword2" class="label-cpasswd2">
+						<span class="content-cpwd2">Confirm Password</span>
+					</label>
+				</div>
+				<br> <br>
+				<span id="msg1"></span>
+				<br><br>
+				<input id="reg-btn" type="submit" value="Submit">
+			</form>
+		</div>
+
+
+	</section>
+	<footer class="foot"></footer>
+</body>
+<script src="script_sign-in.js"></script>
+</html>

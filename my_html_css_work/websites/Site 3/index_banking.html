@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,600" rel="stylesheet" type="text/css">
+    <link type="text/css" rel="stylesheet" href="style_banking.css">
+    <title>Pers. Banking</title>
+</head>
+
+<body>
+    <header>
+        <center>
+            <div class="logo">
+                <img id="logo-img" src="Logo1.JPG" alt="logo">
+                <h2 id="title">FSD Bank Application</h2>
+            </div>
+        </center>
+        <div class="dateholder">
+            <p>Date/Time: <span id="datetime"></span></p>
+        </div>
+        <div id="head_info">
+            <p id="top_usernm">Welcome User: UserName</p>
+            <p id="status"><a href="index_sign-in.html" target="_self">Log Out</a></p>
+        </div>
+
+    </header>
+    <nav>
+        <a href="index_home.html" target="_self">Home</a>
+        <a href="index_banking.html" target="_self">Personal Banking</a>
+        <a href="index_passbook.html" target="_self">Passbook</a>
+        <a href="#about" target="_blank">About Us</a>
+        <div class="dropdown">
+            <a class="contact_btn">Contact Us</a>
+            <ul class="contact_list">
+                <li><a class="cli" href="" target="_blank">Saranya</a></li>
+                <li><a class="cli" href="" target="_blank">Samad</a></li>
+                <li><a class="cli" href="" target="_blank">Amitava</a></li>
+                <li><a class="cli" href="" target="_blank">Ranjit</a></li>
+                <li><a class="cli" href="" target="_blank">Shubhendu</a></li>
+            </ul>
+        </div>
+
+    </nav>
+
+
+    <div class="with-depo-input">
+        <h2 id="pers-bank-heading">Personal Banking</h2>
+
+        <div class="input_desc-container">
+            <label for="bank_menu">Withdraw <strike>OR</strike> Deposit</label>
+
+            <select name="bank_menu" id="menu_list">
+                <option value="null">----Select Option----</option>
+                <option value="withdraws">Withdraw</option>
+                <option value="deposits">Deposit</option>
+            </select>
+            <br> <br>
+            <label for="desc">Description</label>
+            <input type="text" class="description" name="desc" placeholder="Enter Description"> &nbsp;
+            <label for="amnt">Amount</label>
+            <input type="number" class="amount" name="amnt" placeholder="Amount">
+            <br> <br>
+            <input class="ok_btn" type="button" value="OK">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <span id="err_msg" style="color: red; font-size: 16px;"></span>
+            <!-- <input class="ok_btn" type="reset" value="Reset"> -->
+        </div>
+
+        <div class="display_balance">
+            <p class="p_bal_val">Available Balance</p>
+            <p class="p_bal_val1" id="bal_value"> Rs.</p>
+        </div>
+
+    </div>
+
+
+    <div class="transaction-view">
+        <div class="withdraw-panel active">
+            <div class="withdraw">
+                <u>Withdraw</u>
+                <h6>Description &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    Debited</h6>
+                <table class="wit_table">
+                    <!-- <tr class="withdraw_list">
+                        <th> <h4>Description</h4>  </th>
+                        <th> <h4>Debited</h4> </th>
+                    </tr> -->
+                    <tr id="with-0">
+                        <td class="with_desc"></td>
+                        <td class="with_balance"></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="deposit-panel">
+            <div class="deposit">
+                <u>Deposit</u>
+                <h6>Description &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    Credited</h6>
+                <table class="dep_table">
+                    <!-- <tr class="deposit_list">
+                        <th> <h4>Description</h4>  </th>
+                        <th> <h4>Debited</h4> </th>
+                    </tr> -->
+                    <tr id="dep-0">
+                        <td class="dep_desc"></td class="desc">
+                        <td class="dep_balance"></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="script_banking.js"></script>
+<script>
+    var dt = new Date();
+    document.getElementById("datetime").innerHTML = ("[ " + ("0" + dt.getDate()).slice(-2)) + "." + (("0" + (dt
+        .getMonth() +
+        1)).slice(-2)) + "." + (dt.getFullYear()) + " / " + (("0" + dt.getHours()).slice(-2)) + ":" + (("0" + dt
+        .getMinutes()).slice(-2) + " ]");
+</script>
+
+</html>
